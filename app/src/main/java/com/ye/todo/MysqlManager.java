@@ -24,7 +24,7 @@ public class MysqlManager {
 
                 // 尝试建立到给定数据库URL的连接
                 String url = "jdbc:mysql://" + ip + ":" + port + "/" + db;
-                String sufix = "?useSSL=false&serverTimezone=UTC";
+                String sufix = "?useSSL=false";
                 Log.d(TAG, "connect to url:" + url + sufix);
                 connection = DriverManager.getConnection(url + sufix, user, password);
                 Log.d(TAG, "getConnection ok!");

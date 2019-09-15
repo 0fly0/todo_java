@@ -72,7 +72,8 @@ public class TodoActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
                 Log.d(TAG, "add all=" + listTodo.toString());
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listTodo);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                        android.R.layout.simple_list_item_1, listTodo);
                 Message msg = mHandler.obtainMessage(UPDATE_LIST);
                 msg.obj = adapter;
                 mHandler.sendMessage(msg);

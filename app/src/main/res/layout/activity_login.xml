@@ -13,13 +13,6 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editPassword"
-            android:layout_width="400px"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:inputType="textPassword" />
-
-        <EditText
             android:id="@+id/editAccount"
             android:layout_width="400px"
             android:layout_height="wrap_content"
@@ -27,6 +20,14 @@
             android:layout_marginTop="32dp"
             android:hint="@string/account"
             android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnLogin"
